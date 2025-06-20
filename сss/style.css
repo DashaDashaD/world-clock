@@ -34,6 +34,11 @@ select {
   margin-top: 20px;
 }
 
+.city-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .city h2 {
   font-size: 20px;
   font-weight: bold;

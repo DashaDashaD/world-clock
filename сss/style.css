@@ -1,96 +1,88 @@
-/* Загальні стилі сторінки */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f7fe;
-  margin: 0;
-  padding: 30px;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f7fe;
+      margin: 0;
+      padding: 30px;
+    }
 
-/* Основний блок */
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(65, 50, 100, 0.08);
-}
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(65, 50, 100, 0.08);
+    }
 
-/* Заголовок */
-h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-/* Випадаючий список */
-select {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 30px;
-  background-color: #fff;
-}
+    select {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      background-color: #fff;
+    }
 
-/* Стиль для кожного міста */
-.city {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
-}
+    .city {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    }
 
-.city:last-child {
-  border-bottom: none;
-}
+    .city:last-child {
+      border-bottom: none;
+    }
 
-/* Блок із назвою та датою */
-.city h2 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-}
+    .city h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
 
-.date {
-  font-size: 14px;
-  color: #555;
-  opacity: 0.8;
-  margin-top: 5px;
-}
+    .date {
+      font-size: 14px;
+      color: #555;
+      opacity: 0.8;
+      margin-top: 5px;
+    }
 
-/* Годинник */
-.time {
-  font-size: 48px;
-  font-weight: bold;
-  color: #000;
-}
+    .time {
+      font-size: 48px;
+      font-weight: bold;
+      color: #000;
+    }
 
-.time small {
-  font-size: 16px;
-  font-weight: normal;
-  margin-left: 4px;
-}
+    .time small {
+      font-size: 16px;
+      font-weight: normal;
+      margin-left: 4px;
+    }
 
-/* Футер */
-footer {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 14px;
-  color: #555;
-  line-height: 1.6;
-}
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
 
-footer strong {
-  color: #000;
-}
+    footer strong {
+      color: #000;
+    }
 
-footer a {
-  color: #885df1;
-  text-decoration: none;
-}
+    footer a {
+      color: #885df1;
+      text-decoration: none;
+    }
 
-footer a:hover {
-  text-decoration: underline;
-}
+    footer a:hover {
+      text-decoration: underline;
+    }

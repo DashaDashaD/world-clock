@@ -43,26 +43,25 @@ select {
 
 .city:last-child {
   border: none;
+}
 
 .date {
   font-size: 14px;
   color: #777;
   margin-bottom: 5px;
   opacity: 0.7;
+}
 
+.time {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
 }
 
 .time small {
   font-size: 24px;
   vertical-align: middle;
   line-height: 48px;
-}
-
-
-.time {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
 }
 
 footer {

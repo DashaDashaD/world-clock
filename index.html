@@ -1,13 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
-<title>World Clock - Daria Dobrodon</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Clock - Daria Dobrodon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f7fe;
+      margin: 0;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(65, 50, 100, 0.08);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    select {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      background-color: #fff;
+    }
+
+    .city {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    }
+
+    .city:last-child {
+      border-bottom: none;
+    }
+
+    .city h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .date {
+      font-size: 14px;
+      color: #555;
+      opacity: 0.8;
+      margin-top: 5px;
+    }
+
+    .time {
+      font-size: 48px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .time small {
+      font-size: 16px;
+      font-weight: normal;
+      margin-left: 4px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer strong {
+      color: #000;
+    }
+
+    footer a {
+      color: #885df1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <div class="city">
+  <div class="container">
+    <h1>World Clock</h1>
+
+    <select>
+      <option value="">Select a city...</option>
+      <option value="london">London 🇬🇧</option>
+      <option value="newyork">New York 🇺🇸</option>
+      <option value="madrid">Madrid 🇪🇸</option>
+    </select>
+
+    <div class="city">
       <div>
         <h2>Los Angeles 🇺🇸</h2>
         <div class="date">August 15th 2022</div>
@@ -44,6 +143,5 @@
     This project was coded by ❤️ <strong>Daria Dobrodon</strong> and it's
     <a href="https://github.com/DashaDashaD/world-clock" target="_blank">open sourced on GitHub</a>.
   </footer>
-  <script src="javascript/index.js"></script>
 </body>
 </html>

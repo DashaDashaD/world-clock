@@ -54,6 +54,7 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (!cityTimeZone) return;
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }

@@ -58,9 +58,11 @@ function updateCity(event) {
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
+
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
+
   citiesElement.innerHTML = `
     <div class="city">
       <div>
@@ -71,14 +73,15 @@ function updateCity(event) {
         ${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small>
       </div>
     </div>
-     <button id="back-button">All cities</button>
+    <button id="back-button">All cities</button>
   `;
-}
 
-let backButton = document.querySelector("#back-button");
+  
+  let backButton = document.querySelector("#back-button");
   backButton.addEventListener("click", function () {
-    location.reload(); // Перезавантажує сторінку, щоб показати всі міста
+    location.reload(); 
   });
+}
 
 updateTime();
 setInterval(updateTime, 1000);

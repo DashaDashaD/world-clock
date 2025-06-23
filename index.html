@@ -13,12 +13,14 @@
     <h1>World Clock</h1>
 
     <select id="city">
-      <option value="">Select a city...</option>
-      <option value="london">London 🇬🇧</option>
-      <option value="newyork">New York 🇺🇸</option>
-      <option value="madrid">Madrid 🇪🇸</option>
+      <option>Select a city...</option>
+      <option value="current">My current location</option>
+      <option value="Europe/London">London 🇬🇧</option>
+      <option value="America/New_York">New York 🇺🇸</option>
+      <option value="Europe/Madrid">Madrid 🇪🇸</option>
     </select>
 
+    <div class="cities" id="cities">
     <div class="city" id="los-angeles" >
       <div>
         <h2>Los Angeles 🇺🇸</h2>
@@ -50,6 +52,7 @@
       </div>
       <div class="time">1:48:15 <small>AM</small></div>
     </div>
+  </div>
   </div>
 
   <script src="javascript/index.js"></script>

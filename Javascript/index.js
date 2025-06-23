@@ -71,8 +71,14 @@ function updateCity(event) {
         ${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small>
       </div>
     </div>
+     <button id="back-button">All cities</button>
   `;
 }
+
+let backButton = document.querySelector("#back-button");
+  backButton.addEventListener("click", function () {
+    location.reload(); // Перезавантажує сторінку, щоб показати всі міста
+  });
 
 updateTime();
 setInterval(updateTime, 1000);

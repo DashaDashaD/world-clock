@@ -15,12 +15,12 @@
     }
 
     h1 {
-      font-size: 34px;
+      font-size: 44px;
       margin-bottom: 20px;
       text-align: center;
       font: Helvetica;
       color: #564FD6;
-      opacity: 50% ;
+      opacity: 80% ;
     }
 
     select {
